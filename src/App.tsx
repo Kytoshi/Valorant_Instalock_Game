@@ -30,7 +30,7 @@ export default function AssemblyEndgame() {
   const isGameOver: boolean = isGameWon || isGameLost;
   const lastGuessedLetter: string = guessedLetters[guessedLetters.length - 1];
   const isLastGuessIncorrect: boolean =
-    lastGuessedLetter && !currentWord.includes(lastGuessedLetter);
+    !currentWord.includes(lastGuessedLetter);
 
   // Static values
   const alphabet = "abcdefghijklmnopqrstuvwxyz";
