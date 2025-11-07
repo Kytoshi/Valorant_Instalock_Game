@@ -1,6 +1,6 @@
 import type { JSX } from "react";
 
-type NewGameButtonProps = {
+export type NewGameButtonProps = {
   isGameOver: boolean;
   startNewGame: () => void;
 };
